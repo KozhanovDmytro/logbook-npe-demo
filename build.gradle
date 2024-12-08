@@ -18,7 +18,15 @@ repositories {
 }
 
 dependencies {
+    // spring deps
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // logbook
+    implementation 'org.zalando:logbook-spring-boot-autoconfigure:3.9.0'
+    implementation 'org.zalando:logbook-logstash:3.9.0'
+    implementation 'net.logstash.logback:logstash-logback-encoder:7.4'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

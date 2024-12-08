@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: logbook-npe-demo
+
+logging:
+  level:
+    org:
+      zalando:
+        logbook: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+  config: classpath:logback-spring.xml
+logbook:
+  filter:
+    enabled: true
